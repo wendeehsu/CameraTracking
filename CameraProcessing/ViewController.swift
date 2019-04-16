@@ -22,8 +22,10 @@ class ViewController: UIViewController, AVCaptureVideoDataOutputSampleBufferDele
         super.viewDidLoad()
         prepareCamera()
         
+        // Tracker().hello_cpp_wrapped()
+        
         // Set license for VisageSDK.
-        Tracker.setUpLicense()
+        // Tracker.setUpLicense()
         
         // Run camera after 1 second.
         DispatchQueue.main.asyncAfter(deadline: .now() + 1.0, execute: {

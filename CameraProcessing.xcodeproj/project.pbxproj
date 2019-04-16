@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2123EECE226562AD006CB619 /* IrisTracker.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2123EECC226562AD006CB619 /* IrisTracker.cpp */; };
 		2126AC652262D8EC005E8534 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2126AC642262D8EC005E8534 /* AppDelegate.swift */; };
 		2126AC672262D8EC005E8534 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2126AC662262D8EC005E8534 /* ViewController.swift */; };
 		2126AC6A2262D8EC005E8534 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2126AC682262D8EC005E8534 /* Main.storyboard */; };
@@ -39,6 +40,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2123EECC226562AD006CB619 /* IrisTracker.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = IrisTracker.cpp; sourceTree = "<group>"; };
+		2123EECD226562AD006CB619 /* IrisTracker.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = IrisTracker.hpp; sourceTree = "<group>"; };
 		2126AC612262D8EC005E8534 /* CameraProcessing.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CameraProcessing.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2126AC642262D8EC005E8534 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2126AC662262D8EC005E8534 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -104,6 +107,8 @@
 		2126AC582262D8EC005E8534 = {
 			isa = PBXGroup;
 			children = (
+				2123EECC226562AD006CB619 /* IrisTracker.cpp */,
+				2123EECD226562AD006CB619 /* IrisTracker.hpp */,
 				2126ACB12263184E005E8534 /* Tracker.mm */,
 				2126ACB02263183B005E8534 /* Tracker.h */,
 				2126AC992263142A005E8534 /* Resources */,
@@ -259,6 +264,7 @@
 				2126AC672262D8EC005E8534 /* ViewController.swift in Sources */,
 				2126AC652262D8EC005E8534 /* AppDelegate.swift in Sources */,
 				2126AC7B22630B0F005E8534 /* OpenCVWrapper.mm in Sources */,
+				2123EECE226562AD006CB619 /* IrisTracker.cpp in Sources */,
 				2126ACB22263184E005E8534 /* Tracker.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
