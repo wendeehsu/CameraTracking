@@ -12,6 +12,30 @@
 		2126AC6A2262D8EC005E8534 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2126AC682262D8EC005E8534 /* Main.storyboard */; };
 		2126AC6C2262D8EE005E8534 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2126AC6B2262D8EE005E8534 /* Assets.xcassets */; };
 		2126AC6F2262D8EE005E8534 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2126AC6D2262D8EE005E8534 /* LaunchScreen.storyboard */; };
+		2126AC7722630A39005E8534 /* opencv2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2126AC7622630A39005E8534 /* opencv2.framework */; };
+		2126AC7B22630B0F005E8534 /* OpenCVWrapper.mm in Sources */ = {isa = PBXBuildFile; fileRef = 2126AC7A22630B0F005E8534 /* OpenCVWrapper.mm */; };
+		2126AC7E22631233005E8534 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2126AC7D22631233005E8534 /* Accelerate.framework */; };
+		2126AC8022631266005E8534 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2126AC7F22631266005E8534 /* AVFoundation.framework */; };
+		2126AC8222631271005E8534 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2126AC8122631271005E8534 /* CoreGraphics.framework */; };
+		2126AC8422631284005E8534 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2126AC8322631284005E8534 /* CoreMedia.framework */; };
+		2126AC862263128C005E8534 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2126AC852263128C005E8534 /* CoreVideo.framework */; };
+		2126AC882263129C005E8534 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2126AC872263129C005E8534 /* ImageIO.framework */; };
+		2126AC8A226312AA005E8534 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2126AC89226312AA005E8534 /* QuartzCore.framework */; };
+		2126AC8C226312B6005E8534 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2126AC8B226312B6005E8534 /* OpenGLES.framework */; };
+		2126AC8E226312BE005E8534 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2126AC8D226312BE005E8534 /* MobileCoreServices.framework */; };
+		2126AC90226312CC005E8534 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2126AC8F226312CC005E8534 /* UIKit.framework */; };
+		2126AC92226312E3005E8534 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 2126AC91226312E3005E8534 /* libz.tbd */; };
+		2126AC9C2263147A005E8534 /* Facial Features Tracker - High.cfg in Resources */ = {isa = PBXBuildFile; fileRef = 2126AC9A2263147A005E8534 /* Facial Features Tracker - High.cfg */; };
+		2126AC9D2263147A005E8534 /* Facial Features Tracker - Low.cfg in Resources */ = {isa = PBXBuildFile; fileRef = 2126AC9B2263147A005E8534 /* Facial Features Tracker - Low.cfg */; };
+		2126AC9F22631490005E8534 /* candide3.fdp in Resources */ = {isa = PBXBuildFile; fileRef = 2126AC9E22631490005E8534 /* candide3.fdp */; };
+		2126ACA1226314B6005E8534 /* candide3.wfm in Resources */ = {isa = PBXBuildFile; fileRef = 2126ACA0226314B6005E8534 /* candide3.wfm */; };
+		2126ACA4226314C0005E8534 /* jk_300.wfm in Resources */ = {isa = PBXBuildFile; fileRef = 2126ACA2226314C0005E8534 /* jk_300.wfm */; };
+		2126ACA5226314C0005E8534 /* jk_300.fdp in Resources */ = {isa = PBXBuildFile; fileRef = 2126ACA3226314C0005E8534 /* jk_300.fdp */; };
+		2126ACA7226314D7005E8534 /* bdtsdata in Resources */ = {isa = PBXBuildFile; fileRef = 2126ACA6226314D7005E8534 /* bdtsdata */; };
+		2126ACA9226314F8005E8534 /* 452-200-213-720-601-632-039-228-064-839-022.vlc in Resources */ = {isa = PBXBuildFile; fileRef = 2126ACA8226314F8005E8534 /* 452-200-213-720-601-632-039-228-064-839-022.vlc */; };
+		2126ACB22263184E005E8534 /* Tracker.mm in Sources */ = {isa = PBXBuildFile; fileRef = 2126ACB12263184E005E8534 /* Tracker.mm */; };
+		2152A78522638D2600B8A81D /* libVisageVision.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2126AC9722631339005E8534 /* libVisageVision.a */; };
+		2152A78722638D4A00B8A81D /* visageSDK-iOS in Resources */ = {isa = PBXBuildFile; fileRef = 2152A78622638D4A00B8A81D /* visageSDK-iOS */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +46,35 @@
 		2126AC6B2262D8EE005E8534 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2126AC6E2262D8EE005E8534 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2126AC702262D8EE005E8534 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2126AC7622630A39005E8534 /* opencv2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = opencv2.framework; sourceTree = "<group>"; };
+		2126AC7822630B0F005E8534 /* CameraProcessing-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CameraProcessing-Bridging-Header.h"; sourceTree = "<group>"; };
+		2126AC7922630B0F005E8534 /* OpenCVWrapper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OpenCVWrapper.h; sourceTree = "<group>"; };
+		2126AC7A22630B0F005E8534 /* OpenCVWrapper.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = OpenCVWrapper.mm; sourceTree = "<group>"; };
+		2126AC7D22631233005E8534 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
+		2126AC7F22631266005E8534 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		2126AC8122631271005E8534 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		2126AC8322631284005E8534 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		2126AC852263128C005E8534 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
+		2126AC872263129C005E8534 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
+		2126AC89226312AA005E8534 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		2126AC8B226312B6005E8534 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		2126AC8D226312BE005E8534 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		2126AC8F226312CC005E8534 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		2126AC91226312E3005E8534 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		2126AC9322631325005E8534 /* libVisageGaze.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libVisageGaze.a; path = "../../Downloads/visageSDK-iOS/lib/libVisageGaze.a"; sourceTree = "<group>"; };
+		2126AC9422631325005E8534 /* libVisageAnalyser.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libVisageAnalyser.a; path = "../../Downloads/visageSDK-iOS/lib/libVisageAnalyser.a"; sourceTree = "<group>"; };
+		2126AC9722631339005E8534 /* libVisageVision.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libVisageVision.a; path = "../../Downloads/visageSDK-iOS/lib/libVisageVision.a"; sourceTree = "<group>"; };
+		2126AC9A2263147A005E8534 /* Facial Features Tracker - High.cfg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "Facial Features Tracker - High.cfg"; sourceTree = "<group>"; };
+		2126AC9B2263147A005E8534 /* Facial Features Tracker - Low.cfg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "Facial Features Tracker - Low.cfg"; sourceTree = "<group>"; };
+		2126AC9E22631490005E8534 /* candide3.fdp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = candide3.fdp; sourceTree = "<group>"; };
+		2126ACA0226314B6005E8534 /* candide3.wfm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = candide3.wfm; sourceTree = "<group>"; };
+		2126ACA2226314C0005E8534 /* jk_300.wfm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = jk_300.wfm; sourceTree = "<group>"; };
+		2126ACA3226314C0005E8534 /* jk_300.fdp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = jk_300.fdp; sourceTree = "<group>"; };
+		2126ACA6226314D7005E8534 /* bdtsdata */ = {isa = PBXFileReference; lastKnownFileType = folder; path = bdtsdata; sourceTree = "<group>"; };
+		2126ACA8226314F8005E8534 /* 452-200-213-720-601-632-039-228-064-839-022.vlc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "452-200-213-720-601-632-039-228-064-839-022.vlc"; sourceTree = "<group>"; };
+		2126ACB02263183B005E8534 /* Tracker.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Tracker.h; sourceTree = "<group>"; };
+		2126ACB12263184E005E8534 /* Tracker.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = Tracker.mm; sourceTree = "<group>"; };
+		2152A78622638D4A00B8A81D /* visageSDK-iOS */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "visageSDK-iOS"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +82,19 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2152A78522638D2600B8A81D /* libVisageVision.a in Frameworks */,
+				2126AC92226312E3005E8534 /* libz.tbd in Frameworks */,
+				2126AC90226312CC005E8534 /* UIKit.framework in Frameworks */,
+				2126AC8E226312BE005E8534 /* MobileCoreServices.framework in Frameworks */,
+				2126AC8C226312B6005E8534 /* OpenGLES.framework in Frameworks */,
+				2126AC8A226312AA005E8534 /* QuartzCore.framework in Frameworks */,
+				2126AC882263129C005E8534 /* ImageIO.framework in Frameworks */,
+				2126AC862263128C005E8534 /* CoreVideo.framework in Frameworks */,
+				2126AC8422631284005E8534 /* CoreMedia.framework in Frameworks */,
+				2126AC8222631271005E8534 /* CoreGraphics.framework in Frameworks */,
+				2126AC8022631266005E8534 /* AVFoundation.framework in Frameworks */,
+				2126AC7E22631233005E8534 /* Accelerate.framework in Frameworks */,
+				2126AC7722630A39005E8534 /* opencv2.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -38,8 +104,15 @@
 		2126AC582262D8EC005E8534 = {
 			isa = PBXGroup;
 			children = (
+				2126ACB12263184E005E8534 /* Tracker.mm */,
+				2126ACB02263183B005E8534 /* Tracker.h */,
+				2126AC992263142A005E8534 /* Resources */,
+				2126AC7922630B0F005E8534 /* OpenCVWrapper.h */,
+				2126AC7A22630B0F005E8534 /* OpenCVWrapper.mm */,
 				2126AC632262D8EC005E8534 /* CameraProcessing */,
 				2126AC622262D8EC005E8534 /* Products */,
+				2126AC7822630B0F005E8534 /* CameraProcessing-Bridging-Header.h */,
+				2126AC7C22631233005E8534 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,6 +127,8 @@
 		2126AC632262D8EC005E8534 /* CameraProcessing */ = {
 			isa = PBXGroup;
 			children = (
+				2152A78622638D4A00B8A81D /* visageSDK-iOS */,
+				2126AC7622630A39005E8534 /* opencv2.framework */,
 				2126AC642262D8EC005E8534 /* AppDelegate.swift */,
 				2126AC662262D8EC005E8534 /* ViewController.swift */,
 				2126AC682262D8EC005E8534 /* Main.storyboard */,
@@ -62,6 +137,42 @@
 				2126AC702262D8EE005E8534 /* Info.plist */,
 			);
 			path = CameraProcessing;
+			sourceTree = "<group>";
+		};
+		2126AC7C22631233005E8534 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2126AC9722631339005E8534 /* libVisageVision.a */,
+				2126AC9422631325005E8534 /* libVisageAnalyser.a */,
+				2126AC9322631325005E8534 /* libVisageGaze.a */,
+				2126AC91226312E3005E8534 /* libz.tbd */,
+				2126AC8F226312CC005E8534 /* UIKit.framework */,
+				2126AC8D226312BE005E8534 /* MobileCoreServices.framework */,
+				2126AC8B226312B6005E8534 /* OpenGLES.framework */,
+				2126AC89226312AA005E8534 /* QuartzCore.framework */,
+				2126AC872263129C005E8534 /* ImageIO.framework */,
+				2126AC852263128C005E8534 /* CoreVideo.framework */,
+				2126AC8322631284005E8534 /* CoreMedia.framework */,
+				2126AC8122631271005E8534 /* CoreGraphics.framework */,
+				2126AC7F22631266005E8534 /* AVFoundation.framework */,
+				2126AC7D22631233005E8534 /* Accelerate.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2126AC992263142A005E8534 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				2126ACA8226314F8005E8534 /* 452-200-213-720-601-632-039-228-064-839-022.vlc */,
+				2126AC9A2263147A005E8534 /* Facial Features Tracker - High.cfg */,
+				2126ACA6226314D7005E8534 /* bdtsdata */,
+				2126ACA0226314B6005E8534 /* candide3.wfm */,
+				2126ACA3226314C0005E8534 /* jk_300.fdp */,
+				2126ACA2226314C0005E8534 /* jk_300.wfm */,
+				2126AC9E22631490005E8534 /* candide3.fdp */,
+				2126AC9B2263147A005E8534 /* Facial Features Tracker - Low.cfg */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -96,6 +207,7 @@
 				TargetAttributes = {
 					2126AC602262D8EC005E8534 = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1010;
 					};
 				};
 			};
@@ -122,9 +234,18 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2126ACA9226314F8005E8534 /* 452-200-213-720-601-632-039-228-064-839-022.vlc in Resources */,
+				2126ACA5226314C0005E8534 /* jk_300.fdp in Resources */,
+				2126AC9C2263147A005E8534 /* Facial Features Tracker - High.cfg in Resources */,
+				2126ACA4226314C0005E8534 /* jk_300.wfm in Resources */,
 				2126AC6F2262D8EE005E8534 /* LaunchScreen.storyboard in Resources */,
+				2126ACA1226314B6005E8534 /* candide3.wfm in Resources */,
 				2126AC6C2262D8EE005E8534 /* Assets.xcassets in Resources */,
 				2126AC6A2262D8EC005E8534 /* Main.storyboard in Resources */,
+				2126ACA7226314D7005E8534 /* bdtsdata in Resources */,
+				2126AC9D2263147A005E8534 /* Facial Features Tracker - Low.cfg in Resources */,
+				2152A78722638D4A00B8A81D /* visageSDK-iOS in Resources */,
+				2126AC9F22631490005E8534 /* candide3.fdp in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,6 +258,8 @@
 			files = (
 				2126AC672262D8EC005E8534 /* ViewController.swift in Sources */,
 				2126AC652262D8EC005E8534 /* AppDelegate.swift in Sources */,
+				2126AC7B22630B0F005E8534 /* OpenCVWrapper.mm in Sources */,
+				2126ACB22263184E005E8534 /* Tracker.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -213,7 +336,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -268,7 +391,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -282,16 +405,44 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 59PM98299L;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/CameraProcessing",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					VISAGE_STATIC,
+					IOS,
+				);
+				HEADER_SEARCH_PATHS = (
+					"visageSDK-iOS/dependencies/OpenCV-iOS/include/opencv",
+					"visageSDK-iOS/dependencies/OpenCV-iOS/include",
+					"visageSDK-iOS/include/libIOS",
+					"visageSDK-iOS/include",
+				);
 				INFOPLIST_FILE = CameraProcessing/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/../../Downloads/visageSDK-iOS/lib/",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-IlibVisageVision",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = dentall.io.CameraProcessing;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "CameraProcessing-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				WARNING_CFLAGS = "-Wno-comment";
 			};
 			name = Debug;
 		};
@@ -299,16 +450,43 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 59PM98299L;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/CameraProcessing",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					VISAGE_STATIC,
+					IOS,
+				);
+				HEADER_SEARCH_PATHS = (
+					"visageSDK-iOS/dependencies/OpenCV-iOS/include/opencv",
+					"visageSDK-iOS/dependencies/OpenCV-iOS/include",
+					"visageSDK-iOS/include/libIOS",
+					"visageSDK-iOS/include",
+				);
 				INFOPLIST_FILE = CameraProcessing/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/../../Downloads/visageSDK-iOS/lib/",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-IlibVisageVision",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = dentall.io.CameraProcessing;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "CameraProcessing-Bridging-Header.h";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				WARNING_CFLAGS = "-Wno-comment";
 			};
 			name = Release;
 		};
