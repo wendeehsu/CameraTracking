@@ -12,6 +12,8 @@
 		2126AC6A2262D8EC005E8534 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2126AC682262D8EC005E8534 /* Main.storyboard */; };
 		2126AC6C2262D8EE005E8534 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2126AC6B2262D8EE005E8534 /* Assets.xcassets */; };
 		2126AC6F2262D8EE005E8534 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2126AC6D2262D8EE005E8534 /* LaunchScreen.storyboard */; };
+		2126AC7722630A39005E8534 /* opencv2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2126AC7622630A39005E8534 /* opencv2.framework */; };
+		2126AC7B22630B0F005E8534 /* OpenCVWrapper.mm in Sources */ = {isa = PBXBuildFile; fileRef = 2126AC7A22630B0F005E8534 /* OpenCVWrapper.mm */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,10 @@
 		2126AC6B2262D8EE005E8534 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2126AC6E2262D8EE005E8534 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2126AC702262D8EE005E8534 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2126AC7622630A39005E8534 /* opencv2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = opencv2.framework; sourceTree = "<group>"; };
+		2126AC7822630B0F005E8534 /* CameraProcessing-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CameraProcessing-Bridging-Header.h"; sourceTree = "<group>"; };
+		2126AC7922630B0F005E8534 /* OpenCVWrapper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OpenCVWrapper.h; sourceTree = "<group>"; };
+		2126AC7A22630B0F005E8534 /* OpenCVWrapper.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = OpenCVWrapper.mm; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2126AC7722630A39005E8534 /* opencv2.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -38,8 +45,11 @@
 		2126AC582262D8EC005E8534 = {
 			isa = PBXGroup;
 			children = (
+				2126AC7922630B0F005E8534 /* OpenCVWrapper.h */,
+				2126AC7A22630B0F005E8534 /* OpenCVWrapper.mm */,
 				2126AC632262D8EC005E8534 /* CameraProcessing */,
 				2126AC622262D8EC005E8534 /* Products */,
+				2126AC7822630B0F005E8534 /* CameraProcessing-Bridging-Header.h */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,6 +64,7 @@
 		2126AC632262D8EC005E8534 /* CameraProcessing */ = {
 			isa = PBXGroup;
 			children = (
+				2126AC7622630A39005E8534 /* opencv2.framework */,
 				2126AC642262D8EC005E8534 /* AppDelegate.swift */,
 				2126AC662262D8EC005E8534 /* ViewController.swift */,
 				2126AC682262D8EC005E8534 /* Main.storyboard */,
@@ -96,6 +107,7 @@
 				TargetAttributes = {
 					2126AC602262D8EC005E8534 = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1010;
 					};
 				};
 			};
@@ -137,6 +149,7 @@
 			files = (
 				2126AC672262D8EC005E8534 /* ViewController.swift in Sources */,
 				2126AC652262D8EC005E8534 /* AppDelegate.swift in Sources */,
+				2126AC7B22630B0F005E8534 /* OpenCVWrapper.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,8 +295,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 59PM98299L;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/CameraProcessing",
+				);
 				INFOPLIST_FILE = CameraProcessing/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -292,6 +310,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = dentall.io.CameraProcessing;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "CameraProcessing-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -301,8 +321,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 59PM98299L;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/CameraProcessing",
+				);
 				INFOPLIST_FILE = CameraProcessing/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -311,6 +336,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = dentall.io.CameraProcessing;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "CameraProcessing-Bridging-Header.h";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

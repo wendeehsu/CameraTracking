@@ -21,8 +21,9 @@ class ViewController: UIViewController, AVCaptureVideoDataOutputSampleBufferDele
     override func viewDidLoad() {
         super.viewDidLoad()
         prepareCamera()
-        _ = Timer.scheduledTimer(timeInterval: 0.1, target: self, selector: #selector(self.setPreviewImage), userInfo: nil, repeats: true)
-
+        DispatchQueue.main.asyncAfter(deadline: .now() + 1.0, execute: {
+            _ = Timer.scheduledTimer(timeInterval: 0.05, target: self, selector: #selector(self.setPreviewImage), userInfo: nil, repeats: true)
+        })
     }
     
     override func didReceiveMemoryWarning() {
@@ -90,7 +91,8 @@ class ViewController: UIViewController, AVCaptureVideoDataOutputSampleBufferDele
     }
     
     @objc func setPreviewImage(){
-        ImageView.image = previewImage
+        //ImageView.image = previewImage
+        ImageView.image = OpenCVWrapper.makeGrayof(previewImage)
     }
 }
 
