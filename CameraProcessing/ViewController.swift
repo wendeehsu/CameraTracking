@@ -8,8 +8,10 @@ import AVFoundation
 
 class ViewController: UIViewController, AVCaptureVideoDataOutputSampleBufferDelegate {
     
+    @IBOutlet weak var OriginView: UIImageView!
     @IBOutlet weak var ImageView: UIImageView!
     var previewImage = UIImage()
+    var irisTracker = Tracker()
     
     // coordinates between input and output
     let captureSession = AVCaptureSession()
@@ -20,16 +22,23 @@ class ViewController: UIViewController, AVCaptureVideoDataOutputSampleBufferDele
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        Init()
+        RunCamera()
+    }
+    
+    func Init() {
         prepareCamera()
         
-        // Tracker().hello_cpp_wrapped()
+        // Set up private propertyies.
+        irisTracker.initProperty()
+        irisTracker.initTracker(25)
         
-        // Set license for VisageSDK.
-        // Tracker.setUpLicense()
-        
+    }
+    
+    func RunCamera() {
         // Run camera after 1 second.
         DispatchQueue.main.asyncAfter(deadline: .now() + 1.0, execute: {
-            _ = Timer.scheduledTimer(timeInterval: 0.05, target: self, selector: #selector(self.setPreviewImage), userInfo: nil, repeats: true)
+            _ = Timer.scheduledTimer(timeInterval: 0.5, target: self, selector: #selector(self.setPreviewImage), userInfo: nil, repeats: true)
         })
     }
     
@@ -56,10 +65,6 @@ class ViewController: UIViewController, AVCaptureVideoDataOutputSampleBufferDele
             print(error.localizedDescription)
         }
         
-//        let previewLayer = AVCaptureVideoPreviewLayer(session: captureSession)
-//        self.previewLayer = previewLayer
-//        self.view.layer.addSublayer(self.previewLayer)
-//        self.previewLayer.frame = self.view.layer.frame
         captureSession.startRunning()
         
         let dataOutput = AVCaptureVideoDataOutput()
@@ -98,8 +103,9 @@ class ViewController: UIViewController, AVCaptureVideoDataOutputSampleBufferDele
     }
     
     @objc func setPreviewImage(){
-        //ImageView.image = previewImage
-        ImageView.image = OpenCVWrapper.makeGrayof(previewImage)
+        //ImageView.image = OpenCVWrapper.makeGrayof(previewImage)
+        ImageView.image = irisTracker.getPupil(irisTracker, frame: previewImage);
+        OriginView.image = previewImage;
     }
 }
 

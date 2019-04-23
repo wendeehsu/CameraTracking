@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2123EECE226562AD006CB619 /* IrisTracker.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2123EECC226562AD006CB619 /* IrisTracker.cpp */; };
+		21192B01226631DD00CE146B /* lens.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 21192B00226631DD00CE146B /* lens.jpg */; };
 		2126AC652262D8EC005E8534 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2126AC642262D8EC005E8534 /* AppDelegate.swift */; };
 		2126AC672262D8EC005E8534 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2126AC662262D8EC005E8534 /* ViewController.swift */; };
 		2126AC6A2262D8EC005E8534 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2126AC682262D8EC005E8534 /* Main.storyboard */; };
@@ -40,8 +40,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		2123EECC226562AD006CB619 /* IrisTracker.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = IrisTracker.cpp; sourceTree = "<group>"; };
-		2123EECD226562AD006CB619 /* IrisTracker.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = IrisTracker.hpp; sourceTree = "<group>"; };
+		21192B00226631DD00CE146B /* lens.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = lens.jpg; sourceTree = "<group>"; };
 		2126AC612262D8EC005E8534 /* CameraProcessing.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CameraProcessing.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2126AC642262D8EC005E8534 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2126AC662262D8EC005E8534 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -75,7 +74,7 @@
 		2126ACA3226314C0005E8534 /* jk_300.fdp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = jk_300.fdp; sourceTree = "<group>"; };
 		2126ACA6226314D7005E8534 /* bdtsdata */ = {isa = PBXFileReference; lastKnownFileType = folder; path = bdtsdata; sourceTree = "<group>"; };
 		2126ACA8226314F8005E8534 /* 452-200-213-720-601-632-039-228-064-839-022.vlc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "452-200-213-720-601-632-039-228-064-839-022.vlc"; sourceTree = "<group>"; };
-		2126ACB02263183B005E8534 /* Tracker.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Tracker.h; sourceTree = "<group>"; };
+		2126ACB02263183B005E8534 /* Tracker.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; path = Tracker.h; sourceTree = "<group>"; };
 		2126ACB12263184E005E8534 /* Tracker.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = Tracker.mm; sourceTree = "<group>"; };
 		2152A78622638D4A00B8A81D /* visageSDK-iOS */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "visageSDK-iOS"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -107,8 +106,6 @@
 		2126AC582262D8EC005E8534 = {
 			isa = PBXGroup;
 			children = (
-				2123EECC226562AD006CB619 /* IrisTracker.cpp */,
-				2123EECD226562AD006CB619 /* IrisTracker.hpp */,
 				2126ACB12263184E005E8534 /* Tracker.mm */,
 				2126ACB02263183B005E8534 /* Tracker.h */,
 				2126AC992263142A005E8534 /* Resources */,
@@ -168,6 +165,7 @@
 		2126AC992263142A005E8534 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				21192B00226631DD00CE146B /* lens.jpg */,
 				2126ACA8226314F8005E8534 /* 452-200-213-720-601-632-039-228-064-839-022.vlc */,
 				2126AC9A2263147A005E8534 /* Facial Features Tracker - High.cfg */,
 				2126ACA6226314D7005E8534 /* bdtsdata */,
@@ -248,6 +246,7 @@
 				2126AC6C2262D8EE005E8534 /* Assets.xcassets in Resources */,
 				2126AC6A2262D8EC005E8534 /* Main.storyboard in Resources */,
 				2126ACA7226314D7005E8534 /* bdtsdata in Resources */,
+				21192B01226631DD00CE146B /* lens.jpg in Resources */,
 				2126AC9D2263147A005E8534 /* Facial Features Tracker - Low.cfg in Resources */,
 				2152A78722638D4A00B8A81D /* visageSDK-iOS in Resources */,
 				2126AC9F22631490005E8534 /* candide3.fdp in Resources */,
@@ -264,7 +263,6 @@
 				2126AC672262D8EC005E8534 /* ViewController.swift in Sources */,
 				2126AC652262D8EC005E8534 /* AppDelegate.swift in Sources */,
 				2126AC7B22630B0F005E8534 /* OpenCVWrapper.mm in Sources */,
-				2123EECE226562AD006CB619 /* IrisTracker.cpp in Sources */,
 				2126ACB22263184E005E8534 /* Tracker.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
