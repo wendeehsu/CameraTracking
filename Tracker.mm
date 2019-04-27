@@ -169,11 +169,11 @@ int borderFactory;
 
     int* stat;
     stat = tracker->track(ipl->width, ipl->height, ipl->imageData, trackingData, VISAGE_FRAMEGRABBER_FMT_BGR);
-    int j = 0;
-    for(int i = 0; i < 1000; i++)
-    {
-        j++;
-    }
+//    int j = 0;
+//    for(int i = 0; i < 1000; i++)
+//    {
+//        j++;
+//    }
     //cv::waitKey(trackerDelay);        // tracker may be too slow to be real time
     if (stat[0] != TRACK_STAT_OK) {
         cout << "tracker err" << " " << stat[0] << endl;

@@ -10,6 +10,7 @@ class ViewController: UIViewController, AVCaptureVideoDataOutputSampleBufferDele
     
     @IBOutlet weak var OriginView: UIImageView!
     @IBOutlet weak var ImageView: UIImageView!
+
     var previewImage = UIImage()
     var irisTracker = Tracker()
     
@@ -38,7 +39,7 @@ class ViewController: UIViewController, AVCaptureVideoDataOutputSampleBufferDele
     func RunCamera() {
         // Run camera after 1 second.
         DispatchQueue.main.asyncAfter(deadline: .now() + 1.0, execute: {
-            _ = Timer.scheduledTimer(timeInterval: 0.5, target: self, selector: #selector(self.setPreviewImage), userInfo: nil, repeats: true)
+            _ = Timer.scheduledTimer(timeInterval: 0.05, target: self, selector: #selector(self.setPreviewImage), userInfo: nil, repeats: true)
         })
     }
     
@@ -95,7 +96,7 @@ class ViewController: UIViewController, AVCaptureVideoDataOutputSampleBufferDele
             let imageRec = CGRect(x: 0, y: 0, width: CVPixelBufferGetWidth(pixelBuffer), height: CVPixelBufferGetHeight(pixelBuffer))
             
             if let image = context.createCGImage(ciImage, from: imageRec) {
-                return UIImage(cgImage: image, scale: 1.0, orientation: UIImage.Orientation.right)
+                return UIImage(cgImage: image, scale: 1.0, orientation: UIImage.Orientation.up)
             }
         }
         
@@ -103,8 +104,8 @@ class ViewController: UIViewController, AVCaptureVideoDataOutputSampleBufferDele
     }
     
     @objc func setPreviewImage(){
-        //ImageView.image = OpenCVWrapper.makeGrayof(previewImage)
-        ImageView.image = irisTracker.getPupil(irisTracker, frame: previewImage);
+        ImageView.image = OpenCVWrapper.makeGrayof(previewImage)
+//        ImageView.image = irisTracker.getPupil(irisTracker, frame: previewImage);
         OriginView.image = previewImage;
     }
 }
