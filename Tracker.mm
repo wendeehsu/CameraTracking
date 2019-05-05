@@ -169,11 +169,9 @@ int borderFactory;
 
     int* stat;
     stat = tracker->track(ipl->width, ipl->height, ipl->imageData, trackingData, VISAGE_FRAMEGRABBER_FMT_BGR);
-    int j = 0;
-    for(int i = 0; i < 1000; i++)
-    {
-        j++;
-    }
+    
+    usleep(20);
+    cout << stat[0];
     //cv::waitKey(trackerDelay);        // tracker may be too slow to be real time
     if (stat[0] != TRACK_STAT_OK) {
         cout << "tracker err" << " " << stat[0] << endl;
@@ -414,14 +412,16 @@ int borderFactory;
                         frame:(UIImage*)frame{
     cv::Mat frameMat;
     UIImageToMat(frame, frameMat);
-    cv::resize(frameMat, frameMat, cv::Size(480,640));
-    cv::Mat mask[2];
-    cv::Point pupil[2];
-    int radius = 0;
-    int stat = [irisTracker Track:frameMat mask:mask pupil:pupil returnRadius:&radius];
-    if (stat == 0) {
-        //cv::imshow("m", mask[0]);
-        return MatToUIImage(mask[0]);
+    // cv::resize(frameMat, frameMat, cv::Size(480,640));
+    while (true) {
+        cv::Mat mask[2];
+        cv::Point pupil[2];
+        int radius = 0;
+        int stat = [irisTracker Track:frameMat mask:mask pupil:pupil returnRadius:&radius];
+        if (stat == 0) {
+            cout << "get image from tracker!!!!" << endl;
+            return MatToUIImage(frameMat);
+        }
     }
     return nil;
 }

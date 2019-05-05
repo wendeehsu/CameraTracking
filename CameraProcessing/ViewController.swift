@@ -8,8 +8,10 @@ import AVFoundation
 
 class ViewController: UIViewController, AVCaptureVideoDataOutputSampleBufferDelegate {
     
-    @IBOutlet weak var OriginView: UIImageView!
+//    @IBOutlet weak var OriginView: UIImageView!
+//    @IBOutlet weak var ImageView: UIImageView!
     @IBOutlet weak var ImageView: UIImageView!
+    
     var previewImage = UIImage()
     var irisTracker = Tracker()
     
@@ -23,16 +25,16 @@ class ViewController: UIViewController, AVCaptureVideoDataOutputSampleBufferDele
     override func viewDidLoad() {
         super.viewDidLoad()
         Init()
-        RunCamera()
+        setPreviewImage()
+        //RunCamera()
     }
     
     func Init() {
-        prepareCamera()
+        // prepareCamera()
         
         // Set up private propertyies.
         irisTracker.initProperty()
         irisTracker.initTracker(25)
-        
     }
     
     func RunCamera() {
@@ -103,9 +105,8 @@ class ViewController: UIViewController, AVCaptureVideoDataOutputSampleBufferDele
     }
     
     @objc func setPreviewImage(){
-        //ImageView.image = OpenCVWrapper.makeGrayof(previewImage)
+        previewImage = UIImage(named: "w_gr")!
         ImageView.image = irisTracker.getPupil(irisTracker, frame: previewImage);
-        OriginView.image = previewImage;
     }
 }
 

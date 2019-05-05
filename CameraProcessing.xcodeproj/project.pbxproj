@@ -37,6 +37,8 @@
 		2126ACB22263184E005E8534 /* Tracker.mm in Sources */ = {isa = PBXBuildFile; fileRef = 2126ACB12263184E005E8534 /* Tracker.mm */; };
 		2152A78522638D2600B8A81D /* libVisageVision.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2126AC9722631339005E8534 /* libVisageVision.a */; };
 		2152A78722638D4A00B8A81D /* visageSDK-iOS in Resources */ = {isa = PBXBuildFile; fileRef = 2152A78622638D4A00B8A81D /* visageSDK-iOS */; };
+		216979B5227F3FC200B020D0 /* TrackerWrapper.mm in Sources */ = {isa = PBXBuildFile; fileRef = 216979B3227F3FC100B020D0 /* TrackerWrapper.mm */; };
+		216979B9227F40F900B020D0 /* CameraGrabber.mm in Sources */ = {isa = PBXBuildFile; fileRef = 216979B8227F40F900B020D0 /* CameraGrabber.mm */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -77,6 +79,10 @@
 		2126ACB02263183B005E8534 /* Tracker.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; path = Tracker.h; sourceTree = "<group>"; };
 		2126ACB12263184E005E8534 /* Tracker.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = Tracker.mm; sourceTree = "<group>"; };
 		2152A78622638D4A00B8A81D /* visageSDK-iOS */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "visageSDK-iOS"; sourceTree = "<group>"; };
+		216979B3227F3FC100B020D0 /* TrackerWrapper.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = TrackerWrapper.mm; sourceTree = "<group>"; };
+		216979B4227F3FC200B020D0 /* TrackerWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TrackerWrapper.h; sourceTree = "<group>"; };
+		216979B7227F40F900B020D0 /* CameraGrabber.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CameraGrabber.h; sourceTree = "<group>"; };
+		216979B8227F40F900B020D0 /* CameraGrabber.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = CameraGrabber.mm; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +112,9 @@
 		2126AC582262D8EC005E8534 = {
 			isa = PBXGroup;
 			children = (
+				216979B6227F40A100B020D0 /* Grabber */,
+				216979B4227F3FC200B020D0 /* TrackerWrapper.h */,
+				216979B3227F3FC100B020D0 /* TrackerWrapper.mm */,
 				2126ACB12263184E005E8534 /* Tracker.mm */,
 				2126ACB02263183B005E8534 /* Tracker.h */,
 				2126AC992263142A005E8534 /* Resources */,
@@ -176,6 +185,15 @@
 				2126AC9B2263147A005E8534 /* Facial Features Tracker - Low.cfg */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		216979B6227F40A100B020D0 /* Grabber */ = {
+			isa = PBXGroup;
+			children = (
+				216979B7227F40F900B020D0 /* CameraGrabber.h */,
+				216979B8227F40F900B020D0 /* CameraGrabber.mm */,
+			);
+			path = Grabber;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -264,6 +282,8 @@
 				2126AC652262D8EC005E8534 /* AppDelegate.swift in Sources */,
 				2126AC7B22630B0F005E8534 /* OpenCVWrapper.mm in Sources */,
 				2126ACB22263184E005E8534 /* Tracker.mm in Sources */,
+				216979B9227F40F900B020D0 /* CameraGrabber.mm in Sources */,
+				216979B5227F3FC200B020D0 /* TrackerWrapper.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
